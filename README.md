@@ -19,11 +19,12 @@ The demo task is turn-based: a person and an ABB GoFa robot take turns building 
 | Path | What's in it | Status |
 |---|---|---|
 | [`docs/`](docs) | Final poster and documentation report | ✅ |
-| [`src/robot-control/`](src/robot-control) | Unity project (`RobotControll`) for driving the ABB GoFa over EGM/UDP | ✅ |
-| [`src/abb/`](src/abb) | RAPID code and RobotStudio configuration for the ABB controller | ⏳ still in Google Drive |
-| [`src/magna-unity/`](src/magna-unity) | Main Unity project (`Magna`) with Nuitrack human detection | ⏳ still in Google Drive |
+| [`docs/deliverables/`](docs/deliverables) | Project proposal and team contracts | ✅ |
+| [`src/magna-unity/`](src/magna-unity) | Main Unity project (`Magna`) with Nuitrack human detection, task sequences and the gripper model. Unity **2021.3.24f1**; has its own [setup README](src/magna-unity/README.md) | ✅ |
+| [`src/abb/`](src/abb) | RAPID module `EGMCommunication.mod` that runs on the ABB controller | ✅ |
+| [`src/robot-control/`](src/robot-control) | Standalone Unity project (`RobotControll`) for driving the GoFa over EGM/UDP. Unity **6000.0.23f1** | ✅ |
 | [`src/mobile-control/`](src/mobile-control) | Mobile control app (`MobileControll`) | ⏳ still in Google Drive |
-| [`status-reports/`](status-reports) | Weekly reports and milestones | ⏳ still in Google Drive |
+| [`status-reports/`](status-reports) | Project plan and weekly status reports (Fall weeks 1–12, Spring weeks 1–5) | ✅ |
 
 ## How it fits together
 
@@ -70,7 +71,7 @@ Unity version: **6000.0.23f1**.
 📚 Reference: ABB *Externally Guided Motion (EGM)* application manual.
 
 ### 2. Unity
-1. Open the Unity project (`src/robot-control`) in Unity 6000.0.23f1. Unity rebuilds the `Library/` folder on first open, so that first open is slow.
+1. Open the main Unity project (`src/magna-unity`) in Unity **2021.3.24f1**, or the standalone `src/robot-control` project in Unity 6000.0.23f1. Unity rebuilds the `Library/` folder on first open, so that first open is slow.
 2. The robot must be in **Auto** mode before you run the Unity app.
 
 ### 3. Nuitrack human detection
