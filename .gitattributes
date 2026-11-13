@@ -1,0 +1,6 @@
+* text=auto
+*.cs diff=csharp
+*.pdf binary
+*.obj binary
+*.png binary
+*.dll binary
